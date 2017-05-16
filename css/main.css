@@ -1,11 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Monoton');
+@font-face{
+  font-family: futuralightc;
+  src: url(../fonts/futuralightc.otf);
+}
 
 a{
   text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
 }
 
 a:hover{
   text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 ul{
@@ -17,230 +25,72 @@ ul{
 }
 
 body{
-  font-size: 12px;
-  line-height: 1.5;
+  background: url(../img/ocean.jpg) 0 0;
+  height: 100px;
+}
+
+.coming{
+  background: #004954;
+  height: 100vh;
+  width: 50%;
+}
+
+.op{
+  height: 100vh;
+  width: 50%;
+  background-color: rgba(0,0,0,.4);
+}
+
+.maintext{
+  font-family: futuralightc;
   color: #fff;
+  text-transform: uppercase;
+  margin-top: 30vh;
 }
 
-.top-block{
-  background: url(../img/bg.png) repeat 0 0;
-  border-bottom: 4px solid #242424;
-  padding-bottom: 85px;
+.maintext h1{
+  font-weight: bold;
+  line-height: 60px;
+  font-size: 50px;
+  padding-bottom: 20px;
 }
 
-header{
-  padding-top: 24px;
-  padding-bottom: 15px;
-}
-
-.logo{
-  color: #e0e0e0;
+.btn-learn{
+  font-family: futuralightc;
+  background-color: #fff;
+  height: 40px;
+  width: 160px;
   font-size: 25px;
-  font-family: 'Monoton';
-  transition: 0.3s;
-}
-
-.logo:hover{
-  color: #a67173;
-  transition: 0.3s;
-}
-
-nav a{
-  color: #e8e8e8;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 12px 14px;
-  display: block;
-  transition: 0.3s;
-}
-
-nav a:hover{
-  color: #e8e8e8;
-}
-
-nav li{
-  padding-right: 24px;
-}
-
-nav li.active a{
-  background: linear-gradient(to bottom, #a67173, #8b585b);
-}
-
-nav a:hover{
-  background: linear-gradient(to bottom, #282828, #2e2e2e);
-}
-
-form{
-  display: block;
-  background: #2f2f2f;
-  border-top: 1px solid #262626;
-  border-radius: 9px;
-  padding: 10px 0;
-}
-
-input[type="text"]{
-  width: 75%;
-  outline: none;
-}
-
-input, button{
-  background: transparent;
-  border: none;
-}
-
-.middle-button{
-  font-size: 13px;
-  color: #fff;
-  text-transform: capitalize;
-  background: #be7d80;
-  border: none;
-  padding: 11px 25px;
-  transition: 0.3s;
-}
-
-.middle-button:hover{
-  background: #a67173;
-  transition: 0.3s;
-}
-
-.carousel-indicators{
-  text-align: center;
-  margin: 0;
-  bottom: -25px;
-  width: 70%;
-  left: 15%;
-}
-
-.carousel-indicators li{
-  height: 7px;
-  width: 26px;
-  border: none;
-  background: #be7d80;
+  color: #004954;
   border-radius: 0;
+  margin-bottom: 20px;
+  transition: 0.5s;
 }
 
-.carousel-indicators li.active{
-  height: 7px;
-  width: 26px;
-  border: none;
-  background: #795254;
-  border-radius: 0;
-}
-
-.pb30{
-  padding-bottom: 30px;
-}
-
-.carousel-indicators .active{
-  margin: 1px;
-}
-
-.middle-block{
-  background: #fff;
-  color: #333;
-}
-
-.flex-block{
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-}
-
-.flex-item{
-  padding: 25px;
-  margin-top: -65px;
-  background: #fff;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.flex-item h4{
-  color: #171717;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.grey{
-  color: #8e8e8e;
-}
-
-.readmore{
-  color: #333;
-  font-size: 12px;
-  font-weight: bold;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  transition: 0.3s;
-}
-
-.readmore:hover{
-  color: #a67173;
-  transition: 0.3s;
-}
-
-.w100{
-  width: 100%;
-}
-
-.title-recent{
-  margin-left: 25px;
-  padding-bottom: 19px;
-  margin-bottom: 30px;
-}
-
-.ml10{
-  margin-left: 10px;
-}
-
-.mt10{
-  margin-top: 10px;
-}
-
-.recent{
-  position: relative;
-  display: block;
-}
-
-.recent:hover .info{
+.btn-learn:hover{
+  background-color: #004954;
   color: #fff;
-  font-weight: bold;
-  display: block!important;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,.5);
+  transition: 0.5s;
+  border: 1px solid #fff;
 }
 
-.info li{
-  display: inline-block;
-  margin-right: 35px;
-}
-
-.info li:last-child{
-  margin-right: 0;
-}
-
-.info ul{
-  position: absolute;
-  bottom: 90px;
-}
-
-.bot-block{
-  padding-top: 75px;
-  margin-top: -65px;
-  background: url(../img/bg.png) repeat 0 0;
-}
-
-.tg a{
+.socials{
   color: #fff;
+  font-size: 25px;
+  margin-top: 30px;
 }
 
-.tg a:hover{
-  color: #be7d80;
+.righttext{
+  font-family: futuralightc;
+  color: #fff;
+  margin-top: 40vh;
 }
 
-.pb30 .col-xs-12{
-  padding-top: 10px;
+.righttext h1{
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.conth1{
+  border: 4px solid white;
 }
