@@ -149,6 +149,11 @@ p{
   height: 80%;
 }
 
+.mockup .col-xs-12 img{
+  width: 100%;
+  height: 100%;
+}
+
 .bootstrap{
   padding-left: 30px;
   padding-right: 30px;
