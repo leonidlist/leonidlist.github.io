@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 @font-face{
   font-family: futuralightc;
   src: url(../fonts/futuralightc.otf);
@@ -20,6 +21,11 @@ ul{
   list-style: none;
 }
 
+p{
+  font-family: 'Dosis';
+  font-size: 20px;
+}
+
 .centered{
   text-align: center;
 }
@@ -34,6 +40,7 @@ ul{
   padding-top: 300px;
   padding-bottom: 300px;
 }
+
 .brand h1{
   font-family: futuralightc;
   padding-top: 8px;
@@ -43,4 +50,92 @@ ul{
   width: 30vh;
   margin: auto;
   font-size: 40px;
+}
+
+.cgr{
+  background: #f2f0f0;
+}
+
+.aboutme{
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.aboutme h2{
+  font-family: futuralightc;
+  font-size: 35px;
+  text-transform: capitalize;
+}
+
+.ocean{
+  background: url(../img/ocean1.jpg) 0 0 no-repeat;
+  background-size: 100%;
+  -webkit-background-size: 100%;
+}
+
+.rowbl{
+  background: rgba(0,0,0,.5);
+}
+
+.ttlskills{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*.ttlskills:first-child .circles{
+  padding-top: 32px;
+}*/
+
+.circles{
+  padding-top: 35px;
+  font-size: 40px;
+  display: block;
+  background: #38465c;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: auto;
+  color: #fff;
+}
+
+.circles:hover{
+  box-shadow: 0 0 10px rgba(27, 52, 73, .5);
+}
+
+.ttlskills h4{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: futuralightc;
+  font-weight: bold;
+  font-size: 23px;
+  color: #fff;
+}
+
+.ttlskills p{
+  color: #FFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 23px;
+}
+
+.greenline{
+  display: block;
+  width: 10px;
+  height: 4px;
+  color: purple;
+}
+
+.bootstrap{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.bootstrap h4{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: futuralightc;
+  font-weight: bold;
+  font-size: 23px;
 }
