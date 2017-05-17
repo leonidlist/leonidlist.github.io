@@ -52,6 +52,11 @@ p{
   font-size: 40px;
 }
 
+.mobileLogo{
+  width: 35vh!important;
+  font-size: 32px!important;
+}
+
 .cgr{
   background: #f2f0f0;
 }
