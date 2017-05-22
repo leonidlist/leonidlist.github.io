@@ -30,6 +30,18 @@ p{
   text-align: center;
 }
 
+.mt40{
+  margin-top: 40px;
+}
+
+.hidden{
+opacity:0;
+}
+
+.visible{
+opacity:1;
+}
+
 .head-block{
   background: url(../img/hero-bg.jpg) 0 0 no-repeat;
   background-size: 100%;
@@ -144,15 +156,15 @@ p{
   padding-bottom: 45px;
 }
 
-.placeit img{
+/*.placeit img{
   width: 80%;
   height: 80%;
-}
+}*/
 
-.mockup .col-xs-12 img{
+/*.mockup .col-xs-12 img{
   width: 100%;
   height: 100%;
-}
+}*/
 
 .bootstrap{
   padding-left: 30px;
@@ -215,4 +227,68 @@ p{
 
 .rowbl1{
   background: rgba(0,0,0,.5);
+}
+
+.bar-skills{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.progressbar1{
+  display: block;
+  width: 90%;
+  height: 25px;
+  background: #1a7495;
+  margin-top: 5px;
+}
+
+.progressbar2{
+  display: block;
+  width: 80%;
+  height: 25px;
+  background: #3c8eac;
+  margin-top: 5px;
+}
+
+.progressbar3{
+  display: block;
+  width: 87%;
+  height: 25px;
+  background: #49b4dd;
+  margin-top: 5px;
+}
+
+.progressbar4{
+  display: block;
+  width: 40%;
+  height: 25px;
+  background: #437e94;
+  margin-top: 5px;
+}
+
+.progressdesc{
+  font-family: futuralightc;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contactsbot{
+  background: url(../img/contacts.png) 0 0 no-repeat;
+  background-size: 100%;
+  -webkit-background-size: 100%;
+}
+
+.contactsbot .row{
+  background: rgba(0,0,0,.5);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contactsbot h2{
+  color: #FFF;
+  font-family: futuralightc;
+  font-weight: bold;
+  font-size: 50px;
 }
