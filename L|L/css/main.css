@@ -43,7 +43,7 @@ opacity:1;
 }
 
 .head-block{
-  background: url(../img/ocean5.jpg) 0 0 no-repeat;
+  background: url(../img/min/ocean5-min.jpg) 0 0 no-repeat;
   background-position: center;
   background-color: #f2f0f0;
   /*background-size: 100%;
@@ -92,7 +92,7 @@ opacity:1;
 }
 
 .ocean{
-  background: url(../img/ocean4.jpg) 0 0 no-repeat;
+  background: url(../img/min/ocean4-min.jpg) 0 0 no-repeat;
   /*background-size: 100%;
   -webkit-background-size: 100%;*/
   background-position: center;
@@ -210,7 +210,7 @@ opacity:1;
 }
 
 .skills{
-  background: url(../img/ocean3.jpg) 0 0 no-repeat;
+  background: url(../img/min/ocean3-min.jpg) 0 0 no-repeat;
   background-position: center;
   /*background-size: 100%;
   -webkit-background-size: 100%;*/
@@ -284,7 +284,7 @@ opacity:1;
 }
 
 .contactsbot{
-  background: url(../img/ocean2.jpg) 0 0 no-repeat;
+  background: url(../img/min/ocean2-min.jpg) 0 0 no-repeat;
   background-position: center;
   /*background-size: 100%;
   -webkit-background-size: 100%;*/
