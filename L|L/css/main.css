@@ -35,11 +35,11 @@ p{
 }
 
 .hidden{
-opacity:0;
+  opacity:0;
 }
 
-.visible{
-opacity:1;
+.visible2{
+  opacity:1;
 }
 
 .head-block{
@@ -385,4 +385,24 @@ footer a{
 
 footer a:hover{
   color: #FF1800;
+}
+
+.pd1{
+  animation-delay: 0s;
+}
+
+.pd2{
+  animation-delay: .5s;
+}
+
+.pd3{
+  animation-delay: 1s;
+}
+
+.pd4{
+  animation-delay: 1.5s;
+}
+
+.pd5{
+  animation-delay: 2s;
 }
