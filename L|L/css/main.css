@@ -60,11 +60,11 @@ opacity:1;
   padding-top: 20px;
   padding-bottom: 15px;
   font-weight: bold;
-  border: 5px solid #3d3d3d;
+  border: 5px solid #005970;
   width: 30vh;
   margin: auto;
   font-size: 50px;
-  color: #3d3d3d;
+  color: #005970;
 }
 
 .mobileLogo{
@@ -88,7 +88,7 @@ opacity:1;
 }
 
 .aboutme h2::first-letter{
-  color: #3c8eac;
+  color: #005970;
 }
 
 .ocean{
@@ -189,10 +189,6 @@ opacity:1;
   font-size: 23px;
 }
 
-.bootstrap h4:first-letter{
-  color: #3c8eac;
-}
-
 .mockup{
   padding-top: 100px;
   padding-bottom: 100px;
@@ -243,15 +239,16 @@ opacity:1;
 }
 
 .bar-skills{
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   padding-left: 80px;
   padding-right: 80px;
+  background: #f2f0f0;
 }
 
 .progressbar1{
   display: block;
-  width: 90%;
+  width: 91%;
   height: 25px;
   background: #1a7495;
   margin-top: 5px;
@@ -281,6 +278,14 @@ opacity:1;
   margin-top: 5px;
 }
 
+.progressbar5{
+  display: block;
+  width: 63%;
+  height: 25px;
+  background: #275566;
+  margin-top: 5px;
+}
+
 .progressdesc{
   font-family: futuralightc;
   font-size: 30px;
@@ -305,4 +310,79 @@ opacity:1;
   font-family: futuralightc;
   font-weight: bold;
   font-size: 50px;
+}
+
+.socmain{
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.listcontacts .col-md-4:hover .line{
+  background: #437e94;
+  transition: 0.4s;
+}
+
+.listcontacts .col-md-4:hover i{
+  color: #3c8eac;
+  transition: 0.4s;
+}
+
+.listcontacts h3{
+  font-family: futuralightc;
+  font-weight: bold;
+}
+
+.listcontacts i{
+  font-size: 35px;
+  color: black;
+  transition: 0.4s;
+  padding-bottom: 10px;
+}
+
+.socmain a{
+  display: block;
+  color: #000;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.line{
+  display: block;
+  width: 90px;
+  height: 7px;
+  background: black;
+  margin: auto;
+  transition: 0.4s;
+}
+
+.soc{
+  padding-top: 0px;
+  padding-bottom: 5px;
+}
+
+.socials{
+  font-size: 25px;
+}
+
+.socials i:hover{
+  color: #3c8eac;
+}
+
+footer{
+  background-color: #242830;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+footer p{
+  color: #fff;
+  font-size: 15px;
+}
+
+footer a{
+  color: #a1a9b0;
+}
+
+footer a:hover{
+  color: #FF1800;
 }
