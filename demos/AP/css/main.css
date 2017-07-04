@@ -9,14 +9,14 @@
 
 html {
   margin: 0;
-  padding: 0;
-  height: 2000px; }
+  padding: 0; }
 
 a {
   text-decoration: none; }
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 a:focus {
   outline: none;
@@ -34,7 +34,7 @@ a:focus {
 header h1 {
   font-family: 'Dancing Script';
   font-size: 100px;
-  color: #2F2E2E;
+  color: black;
   width: 95%;
   margin: auto; }
 
@@ -57,8 +57,8 @@ header h1 {
   opacity: 1; }
 
 .topNavbar li {
-  font-family: Avenir;
-  font-size: 26px;
+  font-family: 'Dancing Script';
+  font-size: 30px;
   font-weight: 100; }
 
 .topNavbar li a {
@@ -70,10 +70,10 @@ header h1 {
 .headerBg {
   padding-top: 400px;
   padding-bottom: 400px;
-  background-image: url(../img/bg111.jpg);
+  background-image: url(../img/tbg1.jpg);
   -webkit-background-size: cover;
           background-size: cover;
-  background-position: center top;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
@@ -165,6 +165,38 @@ header h1 {
   width: 90%;
   margin-top: -90px; }
 
+@media (max-width: 991px) {
+  header h1 {
+    font-size: 60px; }
+  .headerBg {
+    padding-top: 300px;
+    padding-bottom: 300px; }
+  .a7Wrap img {
+    margin-top: 40px; }
+  .a1112Wrap {
+    margin-top: 40px; }
+  .a13Wrap img {
+    margin-top: 20px; }
+  .a14Wrap img {
+    margin-top: 40px; }
+  .info p {
+    font-size: 20px !important; } }
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  .photosWrap {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+  .a45Wrap img:last-child {
+    margin-top: 30px; }
+  .a6Wrap img {
+    width: 80%; }
+  .a7Wrap img {
+    width: 75%; }
+  .a9Wrap {
+    padding-top: 20px; }
+  .a13Wrap img {
+    margin-top: -30px; } }
+
 .a14Wrap img {
   width: 80%; }
 
@@ -174,7 +206,7 @@ header h1 {
   background-color: #CEE7EB; }
 
 .info p {
-  font-family: Avenir;
+  font-family: 'Dancing Script';
   font-size: 40px; }
 
 .socials {
@@ -187,10 +219,19 @@ header h1 {
   color: black; }
 
 .fa-vk:hover {
-  color: #4980C1; }
+  color: #4980C1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 .fa-telegram:hover {
-  color: #37A0F2; }
+  color: #37A0F2;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 .fa-instagram:hover {
-  color: #d64c71; }
+  color: #d64c71;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }

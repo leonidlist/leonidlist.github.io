@@ -1,0 +1,55 @@
+body {
+  background-color: #fff; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+a:focus {
+  text-decoration: none;
+  color: inherit; }
+
+.ma {
+  margin: auto !important;
+  float: none; }
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #FFD9E6; }
+
+.logoAP h1 {
+  font-size: 40px; }
+
+.img {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.img img {
+  width: 100%; }
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #FFD9E6;
+  font-family: Avenir;
+  color: #3b3b3b; }
+
+.ll {
+  font-size: 15px; }
+
+.ll:hover {
+  font-weight: 400;
+  color: black;
+  text-decoration: underline; }
