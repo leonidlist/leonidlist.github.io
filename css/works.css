@@ -1,0 +1,89 @@
+.projectWrap {
+  padding-top: 0;
+  opacity: 1; }
+
+.project {
+  height: 333px;
+  background-color: #fff;
+  border: 1px solid black;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative; }
+
+.pr1 {
+  background-image: url(../img/BouncyPre.png); }
+
+.pr2 {
+  background-image: url(../img/LPPre.png); }
+
+.pr3 {
+  background-image: url(../img/KinglyPre.png); }
+
+.pr4 {
+  background-image: url(../img/mediaPre.png); }
+
+.pr5 {
+  background-image: url(../img/WebDesignPre.png); }
+
+.pr6 {
+  background-image: url(../img/APPre.png); }
+
+.pr7 {
+  background-image: url(../img/LLOldPre.png); }
+
+.slideInInfo {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 332px;
+  background-color: #000;
+  opacity: 0;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  text-align: center;
+  padding-top: 50px; }
+
+.project:hover .slideInInfo {
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+  opacity: 0.8;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1); }
+
+.project:hover .round {
+  background-color: #fc0b56;
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin: auto;
+  padding-top: 60px; }
+
+.project:hover .slideInInfo h1 {
+  opacity: 1;
+  font-size: 22px;
+  font-family: 'Open Sans';
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 100; }
+
+.project:hover i {
+  color: #fff;
+  opacity: 1; }
+
+.project:hover a {
+  color: #fff;
+  text-decoration: none; }
+
+.project:hover a:hover {
+  color: #fff;
+  text-decoration: none; }
