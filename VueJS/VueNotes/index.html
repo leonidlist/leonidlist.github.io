@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Заметки</title>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <button @click="show = !show">
+        <i class="ion-navicon"></i>
+      </button>
+      <input type="text" class="header-search" v-model="search" onfocus="placeholder='';">
+      <aside v-if="show" transition="slide">
+        <input class="aside-search" type="text" v-model="search" placeholder="Поиск..." onfocus="placeholder='';">
+      </aside>
+    </header>
+    <div class="note-create">
+      <h1>Название</h1>
+      <input type="text" v-model="newTitle" @click="clearTitle">
+      <h1>Текст</h1>
+      <input type="text" v-model="newContent" @click="clearContent()" v-on:keyup.enter="createNote">
+      <button @click="createNote"><i class="ion-android-done"></i></button>
+    </div>
+    <div class="note-wrap" v-for="te in notes | filterBy search in 'title'">
+      <h1 class="note-title">{{te.title}}</h1>
+      <button class="delete" @click="deleteNote(te)"><i class="ion-android-delete"></i></button>
+      <hr>
+      <p class="note-content">{{te.content}}</p>
+      <span>{{index}}</span>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
