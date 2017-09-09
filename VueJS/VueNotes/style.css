@@ -310,3 +310,10 @@ header>button:active{
   outline: none;
   border: 1px solid #bdbdbd;
 }
+
+/****************** MEDIA QUERRY *************/
+@media(min-width: 300px) and (max-width: 980px){
+  .note-wrap, .note-create{
+    width: 90%;
+  }
+}
