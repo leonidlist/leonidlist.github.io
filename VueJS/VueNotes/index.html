@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#e51c23">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Заметки</title>
@@ -15,6 +16,7 @@
         <i class="ion-navicon"></i>
       </button>
       <input type="text" class="header-search" v-model="search" onfocus="placeholder='';">
+      <i class="ion-android-search header-search-logo"></i>
       <aside v-if="show" transition="slide">
         <input class="aside-search" type="text" v-model="search" placeholder="Поиск..." onfocus="placeholder='';">
       </aside>
@@ -27,11 +29,15 @@
       <button @click="createNote"><i class="ion-android-done"></i></button>
     </div>
     <div class="note-wrap" v-for="te in notes | filterBy search in 'title'">
-      <h1 class="note-title">{{te.title}}</h1>
+      <h1 class="note-title" v-if="te.default">{{te.title}}</h1>
+      <input type="text" v-model="te.title" v-if="te.default == false" class="editTitle">
+      <button class="edit" @click="editNote(te)" v-if="te.default"><i class="ion-android-create"></i></button>
       <button class="delete" @click="deleteNote(te)"><i class="ion-android-delete"></i></button>
-      <hr>
-      <p class="note-content">{{te.content}}</p>
-      <span>{{index}}</span>
+      <hr v-if="te.default">
+      <!-- <input type="text" v-model="te.content" v-if="te.default == false" class="editContent"> -->
+      <textarea v-model="te.content" v-if="te.default == false" class="editContent"></textarea>
+      <p class="note-content" v-if="te.default">{{te.content}}</p>
+      <button class="editConfirm" @click="editNoteConfirm(te)" v-if="te.default == false"><i class="ion-android-checkmark-circle"></i></button>
     </div>
   </div>
 

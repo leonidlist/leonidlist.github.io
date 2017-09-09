@@ -20,7 +20,7 @@ header{
   padding: 8px 16px;
   overflow: hidden;
   box-sizing: border-box;
-  background-color: #ffca28;
+  background-color: #e51c23;
 }
 
 aside{
@@ -53,27 +53,39 @@ aside h2{
   width: 100%;
   border: 0;
   outline: 0;
-  background-color: #f0f0f0;
+  background-color: #d01716;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 20px;
   font-family: 'Roboto', open-sans;
-  color: #8b8b8b;
+  color: #fff;
+}
+
+.aside-search::-webkit-input-placeholder{
+  color: #fff!important;
 }
 
 .header-search{
   outline: none;
   border: 0;
-  background-color: #ffb300;
+  background-color: #d01716;
   font-size: 18px;
   border-radius: 5px;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
   line-height: 35px;
-  color: #000;
+  color: #fff;
   float: right;
   margin-top: 8px;
+}
+
+.header-search-logo{
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  top: 23px;
+  right: 30px;
 }
 
 header>button{
@@ -148,7 +160,7 @@ header>button:active{
 }
 
 .note-create input:focus{
-  border-bottom: 3px solid #919191;
+  border-bottom: 3px solid #d01716;
   font-size: 20px;
   transition: .5s;
   color: #000;
@@ -157,7 +169,7 @@ header>button:active{
 .note-create>button{
   margin: auto;
   margin-top: 50px;
-  background-color: #f44336;
+  background-color: #d01716;
   border: 0;
   outline: none;
   font-family: 'Roboto',sans-serif;
@@ -219,13 +231,73 @@ header>button:active{
   height: 40px;
   border: 0;
   outline: none;
-  background-color: #dd2c00;
+  background-color: #ff6e40;
   color: #fff;
   font-size: 20px;
   border-radius: 50%;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   padding-top: 2px;
   cursor: pointer;
+}
+
+.edit{
+  position: absolute;
+  right: 90px;
+  top: 35px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  outline: none;
+  background-color: #ff6e40;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+  padding-top: 3px;
+}
+
+.editConfirm{
+  position: absolute;
+  right: 35px;
+  bottom: 10px;
+  width: 55px;
+  height: 55px;
+  padding-top: 5px;
+  border: 0;
+  outline: none;
+  background-color: #d01716;
+  color: #fff;
+  font-size: 26px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+}
+
+.editTitle{
+  border: 0;
+  outline: none;
+  width: 100%;
+  border-bottom: 3px dashed #d01716;
+  margin-bottom: 60px;
+  margin-top: 80px;
+  font-size: 22px;
+  font-family: 'Roboto', open-sans;
+  line-height: 40px;
+}
+
+.editContent{
+  display: block;
+  border: 0;
+  outline: none;
+  resize: none;
+  width: 100%;
+  height: 100px;
+  background-color: #e9e9e9;
+  font-family: 'Roboto', open-sans;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 40px;
 }
 
 .note-content{
