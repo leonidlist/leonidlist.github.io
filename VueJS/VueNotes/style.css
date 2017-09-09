@@ -314,6 +314,6 @@ header>button:active{
 /****************** MEDIA QUERRY *************/
 @media(min-width: 300px) and (max-width: 980px){
   .note-wrap, .note-create{
-    width: 90%;
+    width: 75%;
   }
 }
