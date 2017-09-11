@@ -23,25 +23,27 @@
     </header>
     <div class="note-create">
       <h1>Название</h1>
-      <input type="text" v-model="newTitle" @click="clearTitle">
+      <input type="text" v-model="newNote.title">
       <h1>Текст</h1>
-      <input type="text" v-model="newContent" @click="clearContent()" v-on:keyup.enter="createNote">
-      <button @click="createNote"><i class="ion-android-done"></i></button>
+      <input type="text" v-model="newNote.content" v-on:keyup.enter="addNote">
+      <button @click="addNote"><i class="ion-android-done"></i></button>
     </div>
-    <div class="note-wrap" v-for="te in notes | filterBy search in 'title'">
+    <div class="note-wrap" v-for="te in notes | filterBy search | orderBy 'date' -1">
       <h1 class="note-title" v-if="te.default">{{te.title}}</h1>
       <input type="text" v-model="te.title" v-if="te.default == false" class="editTitle">
       <button class="edit" @click="editNote(te)" v-if="te.default"><i class="ion-android-create"></i></button>
       <button class="delete" @click="deleteNote(te)"><i class="ion-android-delete"></i></button>
       <hr v-if="te.default">
-      <!-- <input type="text" v-model="te.content" v-if="te.default == false" class="editContent"> -->
       <textarea v-model="te.content" v-if="te.default == false" class="editContent"></textarea>
       <p class="note-content" v-if="te.default">{{te.content}}</p>
-      <button class="editConfirm" @click="editNoteConfirm(te)" v-if="te.default == false"><i class="ion-android-checkmark-circle"></i></button>
+      <button class="editConfirm" @click="editNoteConfirm(te,te.title,te.content)" v-if="te.default == false"><i class="ion-android-checkmark-circle"></i></button>
     </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-database.js"></script>
+  <script src="https://unpkg.com/vuefire/dist/vuefire.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
