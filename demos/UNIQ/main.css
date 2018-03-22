@@ -24,10 +24,12 @@ a:before{
 
 a:focus{
     color: #ffffff;
+    text-decoration: none;
 }
 
 a:hover{
     color: #ffffff;
+    text-decoration: none;
 }
 
 
@@ -129,10 +131,10 @@ a:hover{
 .main{
     background-image: url(img/blake-connally-373084-unsplash.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     background-color: #21002B;
     /* background-image: linear-gradient(120deg, rgb(34,35,36) 0%, rgb(56,34,46) 50%, rgb(55,34,56) 100%); */
-    background-size: 100%;
 }
 
 header{
@@ -143,19 +145,24 @@ header{
 }
 
 .logo{
+    width: 30%;
     color: #ffffff;
     font-size: 14px;
     letter-spacing: 2px;
 }
 
 .menu{
-    width: 30%;
+    width: 70%;
     padding-top: 15px;
 }
 
 .menu ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+}
+
+.menu ul li{
+    margin-left: 40px;
 }
 
 .menu ul a{
@@ -168,7 +175,7 @@ header{
 }
 
 .menu ul li a:before{
-    left: 0;
+    left: -1px;
     bottom: 0;
     width: 100%;
     height: 3px;
@@ -182,14 +189,27 @@ header{
 
 .content{
     z-index: 0;
-    height: 80%;
+    /* height: 80%; */
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .content h2{
     color: #ffffff;
     font-size: 50px;
     letter-spacing: 1px;
+}
+
+@media (max-width: 768px){
+    .logo{
+        width: 100%;
+    }
+    .menu{
+        display: none;
+    }
+    .content h2{
+        font-size: 20px;
+    }
 }

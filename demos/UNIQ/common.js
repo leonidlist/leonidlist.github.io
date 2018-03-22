@@ -11,7 +11,7 @@ document.body.onload = function(){
 document.onreadystatechange = function(){
     var someText = anime({
         targets: 'h2',
-        scale: 1.2,
+        scale: 0.9,
         delay: 1800
     });
 };
