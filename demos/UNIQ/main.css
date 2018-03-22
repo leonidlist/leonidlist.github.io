@@ -71,27 +71,31 @@ a:hover{
     height: 150px;
     border-radius: 50%;
     background-color: #ffffff;
-    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
-    animation: preloader2 2s ease 0.5s infinite;
-}
-
-@keyframes preloader2{
-    0%,100%{
-        transform: scale(1);
-    }
-    80%{
-        transform: scale(0.9);
-    }
+    box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.2);
+    animation: preloader1 2s ease 0.5s infinite;
+    border: 1px solid #877D5F;
 }
 
 .loader3{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
     position: absolute;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     background-color: #ffffff;
-    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
-    animation: preloader 2s ease infinite;
+    box-shadow: 3px 3px 4px 3px rgba(0, 0, 0, 0.2);
+    animation: preloader2 2s ease infinite;
+    border: 1px solid #877D5F;
+}
+
+.dot{
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    top: 15px;
+    background-color: #877D5F;
 }
 
 @keyframes preloader2{

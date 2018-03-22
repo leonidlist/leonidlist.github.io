@@ -4,7 +4,7 @@ document.body.onload = function(){
         if(!preloader.classList.contains('done')){
             preloader.classList.add('done');
         }
-    }, 1300)
+    }, 13000)
 }
 
 // Анимация в блоке основого контента
