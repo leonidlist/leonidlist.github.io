@@ -1,0 +1,191 @@
+@font-face{
+    font-family: GothamReg;
+    src: url(GothamReg.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: GothamReg, sans-serif;
+}
+
+a{
+    position: relative;
+    color: #ffffff;
+}
+
+a:before{
+    content: '';
+    position: absolute;
+    transition: transform .5s ease-in-out;
+}
+
+a:focus{
+    color: #ffffff;
+}
+
+a:hover{
+    color: #ffffff;
+}
+
+
+.preloader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 5;
+    /* opacity: 0.8; */
+    transform: rotate(0deg);
+}
+
+.loader{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    animation: preloader1 1.5s ease infinite;
+}
+
+@keyframes preloader1{
+    0%,100%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(0.9);
+    }
+}
+
+.loader2{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    animation: preloader2 2s ease 0.5s infinite;
+}
+
+@keyframes preloader2{
+    0%,100%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(0.9);
+    }
+}
+
+.loader3{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    animation: preloader 2s ease infinite;
+}
+
+@keyframes preloader2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.done{
+    transform: translateY(-100%);
+    transition: .7s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.main-wrap{
+    /* background-color: #21002B; */
+    opacity: 0.4;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main{
+    background-image: url(img/blake-connally-373084-unsplash.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-color: #21002B;
+    /* background-image: linear-gradient(120deg, rgb(34,35,36) 0%, rgb(56,34,46) 50%, rgb(55,34,56) 100%); */
+    background-size: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    z-index: 0;
+}
+
+.logo{
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.menu{
+    width: 30%;
+    padding-top: 15px;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu ul a{
+    display: inline-block;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.menu ul li a:before{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    transform: translateX(-100%);
+}
+
+.menu ul li a:hover:before{
+    transform: translateX(0%);
+}
+
+.content{
+    z-index: 0;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h2{
+    color: #ffffff;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
