@@ -8,10 +8,10 @@ document.body.onload = function(){
 }
 
 // Анимация в блоке основого контента
-document.addEventListener('DOMContentLoaded', function(){
+document.onreadystatechange = function(){
     var someText = anime({
         targets: 'h2',
         scale: 1.2,
         delay: 1800
     });
-})
+};
