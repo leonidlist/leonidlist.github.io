@@ -43,9 +43,10 @@ a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #FD9E77;
+    background-image: linear-gradient(120deg, #36c19d 0%, #ecbaff 100%);
+    background-size: 400%;
+    animation: logo-bg-anim 20s ease infinite;
     z-index: 5;
-    /* opacity: 0.8; */
     transform: rotate(0deg);
 }
 
@@ -122,43 +123,54 @@ a:hover{
     transition: .8s;
     visibility: hidden;
     opacity: 0;
-    /* animation: done 1s ease 1; */
-}
-/* 
-@keyframes done{
-    0%{
-        opacity: 1;
-    }
-    50%{
-        transform: scale(0.9);
-    }
-    100%{
-        transform: translateY(-100%);
-        opacity: 1;
-        visibility: hidden
-    }
-} */
-
-
-.main-wrap{
-    /* background-color: #21002B; */
-    opacity: 0.4;
-    height: 100%;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
 }
 
 .main{
-    /* background-image: url(img/blake-connally-373084-unsplash.jpg); */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
     height: 2000px;
     background-color: #222338;
     background-attachment: fixed;
-    /* background-image: linear-gradient(120deg, rgb(34,35,36) 0%, rgb(56,34,46) 50%, rgb(55,34,56) 100%); */
+}
+
+.socials{
+    letter-spacing: 1px;
+    bottom: 5%;
+    left: 3%;
+    position: fixed;
+    background-color: inherit;
+    height: 40px;
+    width: 200px;
+    /* transform: rotate(-90deg); */
+}
+
+.socials a{
+    z-index: 2;
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    color: #fff;
+}
+
+.socials a:before{
+    z-index: -1;
+    transition: .5s ease-in-out;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(120deg, #36c19d 0%, #ecbaff 100%);
+    transform: translateY(-100%);
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+}
+
+.socials a:hover:before{
+    visibility: visible;
+    opacity: 1;
+    z-index: -1;
+    /* display: block; */
+    transform: translateY(0%);
 }
 
 header{
@@ -168,9 +180,21 @@ header{
     z-index: 0;
 }
 
+.logo-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(120deg, #36c19d 0%, #ecbaff 100%);
+    background-size: 200%;
+    animation: logo-bg-anim 10s ease infinite;
+}
+
 .logo{
     /* background-color: #A149B9; */
-    background-image: linear-gradient(120deg, #f5576c 0%, #f093fb 100%);
+    /* background-image: linear-gradient(120deg, #f5576c 0%, #f093fb 100%); */
     padding-left: 11px;
     padding-top: 10px;
     width: 170px;
@@ -178,7 +202,37 @@ header{
     color: #ffffff;
     font-size: 14px;
     letter-spacing: 2px;
+    transform: translateX(-300px);
+    transition-duration: .5s;
+    transition-timing-function: ease;
     box-shadow: 7px 4px 149px 2px rgba(0,0,0,0.75);
+}
+
+@keyframes logo-bg-anim { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.logo-anim{
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    animation: logo-anim 1s ease 1 forwards;
+}
+
+@keyframes logo-anim{
+    0%{
+        transform: translateX(-300px);
+    }
+    60%{
+        transform: translateX(10px);
+    }
+    80%{
+        transform: translateX(-3px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .menu{
@@ -209,7 +263,7 @@ header{
     bottom: 0;
     width: 100%;
     height: 3px;
-    background-image: linear-gradient(120deg, #f5576c 0%, #f093fb 100%);
+    background-image: linear-gradient(120deg, #36c19d 0%, #ecbaff 100%);
     transform: translateX(-100%);
 }
 
@@ -223,28 +277,25 @@ header{
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
 }
 
 .block1{
     padding: 40px;
     box-shadow: 7px 4px 149px 2px rgba(0,0,0,0.75);
     color: #ffffff; 
-    /* margin-right: 330px; */
     height: 300px;
-    /* width: 600px; */
-    background-image: linear-gradient(120deg, #f5576c 0%, #f093fb 100%);
+    background-image: linear-gradient(120deg, #36c19d 0%, #ecbaff 100%);
 }
 
 @media (max-width: 668px) and (min-width: 350px){
     .menu{
         display: none;
     }
-    .content h2{
-        font-size: 20px;
-    }
     .block1{
         height: 400px;
+    }
+    .socials{
+        display: none;
     }
 }
 
@@ -255,7 +306,13 @@ header{
 }
 
 @media (max-width: 349px){
+    .menu{
+        display: none;
+    }
     .block1{
-        height: 500px;
+        height: 550px;
+    }
+    .socials{
+        display: none;
     }
 }
