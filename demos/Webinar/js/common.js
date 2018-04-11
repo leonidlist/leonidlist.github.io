@@ -1,0 +1,3 @@
+$(function() {
+	//Your js here
+})

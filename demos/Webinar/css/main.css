@@ -1,0 +1,442 @@
+@font-face {
+  font-family: 'MyriadProBold';
+  src: url(../fonts/MyriadProBold.ttf); }
+
+@font-face {
+  font-family: 'MyriadProReg';
+  src: url(../fonts/MyriadProRegular.ttf); }
+
+@font-face {
+  font-family: 'GothamReg';
+  src: url(../fonts/GothamReg.otf); }
+
+@media (max-width: 576px) {
+  .section1 {
+    padding-bottom: 70px !important; }
+    .section1 .content1 {
+      padding-top: 70px !important; }
+    .section1 .form input {
+      margin-top: 15px !important;
+      margin-bottom: 15px !important;
+      width: 100% !important; }
+  .section2 p {
+    font-size: 0.8em; }
+  .section3 {
+    padding-bottom: 70px !important;
+    padding-top: 70px !important; }
+    .section3 .form input {
+      margin-top: 15px !important;
+      margin-bottom: 15px !important;
+      width: 100% !important; }
+    .section3 .waits {
+      border-top: 1px dashed #fff;
+      border-left: 0 !important; }
+  .head {
+    margin-bottom: 30px; }
+  .photo {
+    width: 290px !important;
+    height: 290px !important; }
+  .section6 h1 {
+    font-size: 1.3em; }
+  .section6 h3 {
+    font-size: 1.1em; }
+  .section6 p {
+    font-size: 0.8em; } }
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .section1 {
+    padding-bottom: 90px !important; }
+    .section1 .content1 {
+      padding-top: 90px !important; }
+    .section1 .form input {
+      margin-top: 15px !important;
+      margin-bottom: 15px !important;
+      width: 100% !important; }
+  .section3 .form input {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    width: 100% !important; }
+  .section3 .waits {
+    border-top: 1px dashed #fff;
+    border-left: 0 !important; }
+  .head {
+    margin-bottom: 30px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section1 {
+    padding-bottom: 130px !important; }
+    .section1 .content1 {
+      padding-top: 130px !important; }
+  .section3 .form input {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    width: 100% !important; }
+  .section3 .waits {
+    border-top: 1px dashed #fff;
+    border-left: 0 !important; }
+  .head {
+    margin-bottom: 30px; }
+  .form input {
+    font-size: 0.9em !important; } }
+
+@media (max-width: 1212px) {
+  .phrases {
+    display: none; } }
+
+.section1 {
+  position: relative;
+  width: 100%;
+  background-image: url(../img/head.jpg);
+  padding-bottom: 250px;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .section1 .black {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); }
+  .section1 .content1 {
+    padding-top: 350px; }
+  .section1 .head h4, .section1 .head h1 {
+    color: #fff;
+    font-family: 'GothamReg'; }
+  .section1 .head h4 {
+    margin-bottom: 20px; }
+  .section1 .head h1 {
+    font-size: 2.2em; }
+  .section1 .registration .descr li {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: 'GothamReg'; }
+  .section1 .registration .form input {
+    font-size: 1em;
+    width: 29%;
+    margin: 0 10px;
+    border: 3px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    color: #fff;
+    font-family: 'GothamReg';
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    .section1 .registration .form input::-webkit-input-placeholder {
+      color: #fff; }
+    .section1 .registration .form input::-moz-placeholder {
+      color: #fff; }
+    .section1 .registration .form input:-moz-placeholder {
+      color: #fff; }
+    .section1 .registration .form input:-ms-input-placeholder {
+      color: #fff; }
+    .section1 .registration .form input:focus {
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      outline: none;
+      border-color: #4b7d83; }
+      .section1 .registration .form input:focus::-webkit-input-placeholder {
+        color: transparent; }
+      .section1 .registration .form input:focus::-moz-placeholder {
+        color: transparent; }
+      .section1 .registration .form input:focus:-moz-placeholder {
+        color: transparent; }
+      .section1 .registration .form input:focus:-ms-input-placeholder {
+        color: transparent; }
+  .section1 .registration .form button {
+    cursor: pointer;
+    margin-top: 35px;
+    border: 3px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 40px;
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    .section1 .registration .form button:hover {
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      background-color: #fff;
+      color: #000;
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
+    .section1 .registration .form button:focus {
+      outline: none; }
+
+.section2 {
+  position: relative;
+  background-color: #fff;
+  font-size: 1.1em;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .section2 p {
+    font-family: 'GothamReg';
+    color: #000; }
+    .section2 p .accent {
+      font-weight: bold; }
+  .section2 ul {
+    margin: auto;
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 0; }
+    .section2 ul li {
+      font-family: 'GothamReg';
+      color: #000; }
+  .section2 h2 {
+    color: #000;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-family: 'GothamReg'; }
+  .section2 span {
+    line-height: 3.5em;
+    font-weight: bold; }
+  .section2 .line {
+    margin: auto;
+    display: block;
+    width: 85px;
+    height: 5px;
+    background-color: #286655;
+    margin-bottom: 15px; }
+
+.section3 {
+  background-image: url(../img/bbb.jpg);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative; }
+  .section3 p {
+    font-family: 'GothamReg';
+    font-size: 1.2em;
+    color: #000; }
+  .section3 .already {
+    margin-top: 20px;
+    color: #000; }
+    .section3 .already ul {
+      padding: 0;
+      list-style-position: inside; }
+      .section3 .already ul li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'GothamReg';
+        font-size: 1.3em; }
+  .section3 .waits {
+    border-top: 1px dashed #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #000; }
+    .section3 .waits h3 {
+      font-family: 'GothamReg';
+      margin-bottom: 30px; }
+    .section3 .waits h1 {
+      font-family: 'GothamReg'; }
+  .section3 .form {
+    margin-top: 30px; }
+    .section3 .form input {
+      font-size: 1em;
+      width: 29%;
+      margin: 0 10px;
+      border: 3px solid #000;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      color: #000;
+      font-family: 'GothamReg';
+      -webkit-border-radius: 8px;
+              border-radius: 8px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .section3 .form input::-webkit-input-placeholder {
+        color: #000; }
+      .section3 .form input::-moz-placeholder {
+        color: #000; }
+      .section3 .form input:-moz-placeholder {
+        color: #000; }
+      .section3 .form input:-ms-input-placeholder {
+        color: #000; }
+      .section3 .form input:focus {
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        outline: none; }
+        .section3 .form input:focus::-webkit-input-placeholder {
+          color: transparent; }
+        .section3 .form input:focus::-moz-placeholder {
+          color: transparent; }
+        .section3 .form input:focus:-moz-placeholder {
+          color: transparent; }
+        .section3 .form input:focus:-ms-input-placeholder {
+          color: transparent; }
+    .section3 .form button {
+      cursor: pointer;
+      margin-top: 35px;
+      border: 3px solid #000;
+      background-color: transparent;
+      color: #000;
+      padding: 10px 40px;
+      -webkit-border-radius: 30px;
+              border-radius: 30px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .section3 .form button:hover {
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        background-color: #000;
+        color: #fff;
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1); }
+      .section3 .form button:focus {
+        outline: none; }
+  .section3 .black {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 0; }
+
+.section4 {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .section4 h2 {
+    font-family: 'GothamReg';
+    margin-bottom: 50px; }
+  .section4 .img1 {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/sect4.jpg);
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center center;
+    margin-bottom: 30px; }
+  .section4 p {
+    font-family: 'GothamReg'; }
+
+.section5 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #d6d6d6; }
+  .section5 .photo-wrap {
+    padding-bottom: 80px; }
+    .section5 .photo-wrap .photo {
+      margin: auto;
+      background-image: url(../img/lector.jpg);
+      width: 500px;
+      height: 500px;
+      -webkit-background-size: cover;
+              background-size: cover;
+      background-position: center center;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+  .section5 .knows h2 {
+    font-family: 'GothamReg'; }
+  .section5 .knows li {
+    font-family: 'GothamReg'; }
+  .section5 .lector h1, .section5 .lector h2 {
+    font-family: 'GothamReg'; }
+  .section5 .lector li {
+    font-family: 'GothamReg'; }
+
+.section6 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f7d8a9; }
+  .section6 h1, .section6 h3 {
+    font-family: 'GothamReg'; }
+  .section6 p {
+    font-family: 'GothamReg'; }
+  .section6 .form {
+    margin-top: 30px; }
+    .section6 .form input {
+      font-size: 1em;
+      width: 32%;
+      border: 1px solid #000;
+      background-color: transparent;
+      padding: 10px;
+      color: #000;
+      font-family: 'MyriadProReg';
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .section6 .form input::-webkit-input-placeholder {
+        color: #000; }
+      .section6 .form input::-moz-placeholder {
+        color: #000; }
+      .section6 .form input:-moz-placeholder {
+        color: #000; }
+      .section6 .form input:-ms-input-placeholder {
+        color: #000; }
+      .section6 .form input:focus {
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        border: 1px solid #000;
+        outline: none; }
+        .section6 .form input:focus::-webkit-input-placeholder {
+          color: transparent; }
+        .section6 .form input:focus::-moz-placeholder {
+          color: transparent; }
+        .section6 .form input:focus:-moz-placeholder {
+          color: transparent; }
+        .section6 .form input:focus:-ms-input-placeholder {
+          color: transparent; }
+    .section6 .form button {
+      cursor: pointer;
+      margin-top: 35px;
+      border: 1px solid #000;
+      background-color: transparent;
+      color: #000;
+      padding: 10px 40px;
+      -webkit-border-radius: 30px;
+              border-radius: 30px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .section6 .form button:hover {
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        background-color: #000;
+        color: #fff; }
+      .section6 .form button:focus {
+        outline: none; }
+
+html {
+  margin: 0;
+  padding: 0; }
+
+.centered {
+  text-align: center; }
+
+nav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.3); }
+  nav ul {
+    padding: 0;
+    margin: 0; }
+  nav a {
+    font-family: 'GothamReg';
+    color: #fff; }
+    nav a:hover {
+      text-decoration: none;
+      color: #fff; }

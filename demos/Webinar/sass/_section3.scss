@@ -1,0 +1,105 @@
+.section3{
+  // background-color: #7A9D93;
+  background-image: url(../img/bbb.jpg);
+  // background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  p{
+    font-family: 'GothamReg';
+    font-size: 1.2em;
+    color: #000;
+  }
+
+  .already{
+    margin-top: 20px;
+    color: #000;
+    ul{
+      padding: 0;
+      list-style-position: inside;
+      li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'GothamReg';
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  .waits{
+    border-top: 1px dashed #000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #000;
+    h3{
+      font-family: 'GothamReg';
+      margin-bottom: 30px;
+    }
+    h1{
+      font-family: 'GothamReg';
+    }
+  }
+
+  .form{
+    margin-top: 30px;
+    input{
+      font-size: 1em;
+      width: 29%;
+      margin: 0 10px;
+      border: 3px solid #000;
+      background-color: rgba(255,255,255,.1);
+      padding: 10px;
+      color: #000;
+      font-family: 'GothamReg';
+      border-radius: 8px;
+      transition: .3s;
+      &::-webkit-input-placeholder {color: #000}
+      &::-moz-placeholder          {color: #000}
+      &:-moz-placeholder           {color: #000}
+      &:-ms-input-placeholder      {color: #000}
+
+      &:focus{
+        transition: .3s;
+        outline: none;
+        &::-webkit-input-placeholder {color: transparent}
+        &::-moz-placeholder          {color: transparent}
+        &:-moz-placeholder           {color: transparent}
+        &:-ms-input-placeholder      {color: transparent}
+      }
+    }
+
+    button{
+      cursor: pointer;
+      margin-top: 35px;
+      border: 3px solid #000;
+      background-color: transparent;
+      color: #000;
+      padding: 10px 40px;
+      border-radius: 30px;
+      transition: .3s;
+
+      &:hover{
+        transition: .3s;
+        background-color: #000;
+        color: #fff;
+        transform: scale(1.1);
+      }
+
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+
+  .black{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.4);
+    z-index: 0;
+  }
+}

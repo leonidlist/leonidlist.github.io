@@ -1,0 +1,62 @@
+.section6{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgb(247, 216, 169);
+
+  h1, h3{
+    font-family: 'GothamReg';
+  }
+
+  p{
+    font-family: 'GothamReg';
+  }
+
+  .form{
+    margin-top: 30px;
+    input{
+      font-size: 1em;
+      width: 32%;
+      border: 1px solid #000;
+      background-color: transparent;
+      padding: 10px;
+      color: #000;
+      font-family: 'MyriadProReg';
+      transition: .3s;
+      &::-webkit-input-placeholder {color: #000}
+      &::-moz-placeholder          {color: #000}
+      &:-moz-placeholder           {color: #000}
+      &:-ms-input-placeholder      {color: #000}
+
+      &:focus{
+        transition: .3s;
+        border: 1px solid #000;
+        outline: none;
+        &::-webkit-input-placeholder {color: transparent}
+        &::-moz-placeholder          {color: transparent}
+        &:-moz-placeholder           {color: transparent}
+        &:-ms-input-placeholder      {color: transparent}
+      }
+    }
+
+    button{
+      cursor: pointer;
+      margin-top: 35px;
+      border: 1px solid #000;
+      background-color: transparent;
+      color: #000;
+      padding: 10px 40px;
+      border-radius: 30px;
+      transition: .3s;
+
+      &:hover{
+        transition: .3s;
+        background-color: #000;
+        color: #fff;
+      }
+
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+}
